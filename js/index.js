@@ -5,7 +5,7 @@ app.controller('MainController',['$scope','$http',function($scope,$http) {
     $scope.city = '';
     $scope.clock = '';
     $scope.today = true;
-    //$scope.key = "e6f26944155298b1b11981038b156742";
+
 
     // Search the city inputed
     $scope.search = function(city) {
@@ -33,7 +33,7 @@ app.controller('MainController',['$scope','$http',function($scope,$http) {
         str += hrs;
 
         str += ':';
-        var mins = d.getMinutes();                //Get the currently Minute
+        var mins = d.getMinutes();                //Get the current minute
         str += (mins < 10 ? '0' : '') + mins;     //Minute is less than 10 paste "0" to min
 
         str += meridian; 
